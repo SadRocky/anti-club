@@ -1,0 +1,386 @@
+/* START PRELOADER */
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #212121;
+    z-index: 5000;
+  }
+  
+  .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 0.7s infinite linear;
+  }
+  
+  .preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #ff0000;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 0.7s infinite ease-in-out;
+  }
+  
+  .preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+  }
+  
+  @keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes preloader-bounce {
+  
+    0%,
+    100% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+
+
+/* END PRELOADER */
+
+body {
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+html, 
+body, 
+.view {
+    height: 100%;
+}
+
+.carousel {
+    height: 50%;
+}
+
+.carousel .carousel-inner {
+    height: 100%;
+}
+
+.carousel .carousel-inner .carousel-item, 
+.carousel .carousel-inner .active {
+    height: 100%;
+}
+
+@media (max-width:776px) {
+    .carousel {
+        height: 100%;
+    }
+}
+
+
+
+main .container #header {
+    background: gray;
+}
+
+    html, 
+    body,
+    .carousel {
+      height: 100vh;
+}
+
+@media (max-width:740px) {
+    html, 
+    body,
+    .carousel {
+      height: 100vh;
+  }
+@media (min-width: 800px) and (max-width: 850px) {
+    html, 
+    body, 
+    header,
+    .carousel {
+      height: 100vh;
+    }
+  }
+}
+
+
+/*PARALLAX START*/
+
+#parallax_2 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:block;
+    width: 100%;
+    height:300px;
+    margin: 0;
+    padding: 0;
+}
+
+/*RAPALLAX END*/
+
+
+section.experince {
+    padding-top: 85px;
+    padding-bottom: 85px;
+    text-align: center;
+}
+
+section.experince h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+div.col-12 {
+    margin-top: 90px;
+}
+
+div.top-36 {
+    padding-top: 36px;
+}
+
+p.text-extra-small {
+    color: #9b9b9b;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+h4.offset-top {
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.tab-98 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1.text-danger {
+    font-weight: 700;
+    padding-bottom: 20px;
+    font-size: 60px;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+img.rounded-circle {
+    width: 100px;
+    height: 100px;
+}
+
+h6 {
+    font-size: 10px;
+}
+
+h4 {
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    
+}
+.person {
+    margin-top: 50px;
+}
+
+.person-top {
+    margin-bottom: 0px;
+}
+
+p.text-danger {
+    font-size: 14px;
+}
+
+.person-text {
+    font-weight: 100;
+}
+
+.tickets-top {
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+#reg-b {
+    margin-bottom: 80px;
+}
+
+#button-reg {
+    width: 200px;
+}
+
+.container-bg {
+    background: #111;
+    padding-top: 50px;
+}
+
+.footer-add-left {
+    text-align: left;
+}
+
+.footer-add-right {
+    text-align: right;
+}
+
+/*PAY*/
+
+.form-control {
+    background-color: #111;
+    color: #fff;
+    font-size: 22px;
+}
+
+label {
+    font-size: 22px;
+}
+ 
+@media (min-width: 1px) and (max-width: 540px) {
+    h1#experience.text-bold {
+        font-size: 35px;
+    }
+
+    h1.text-danger {
+        font-size: 20px;
+        padding-bottom: 0px;
+    }
+
+    p.text-white {
+        font-size: 18px;
+    }
+
+    div.col-12 {
+        margin-top: -7px;
+    }
+    h1.our-team {
+        margin-top: 20px;
+    }
+
+    h2.text-white {
+        font-size: 25px;
+    }
+
+    #register-now {
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width: 541px) and (max-width: 768px) {
+
+    h1.text-danger {
+        font-size: 40px;
+        padding-bottom: 0px;
+        padding-top: 30px;
+    }
+
+    p.text-white {
+        font-size: 18px;
+    }
+
+    div.col-12 {
+        margin-top: -7px;
+    }
+    h1.our-team {
+        margin-top: 20px;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    img.mt-4 {
+        width: 200px;
+    }
+}
+
+html, 
+body, 
+.view {
+    height: 100%;
+}
+
+.carousel {
+    height: 100%;
+}
+
+.carousel .carousel-inner {
+    height: 100%;
+}
+
+.carousel .carousel-inner .carousel-item, 
+.carousel .carousel-inner .active {
+    height: 100%;
+}
+
+@media (max-width:776px) {
+    .carousel {
+        height: 100%;
+    }
+}
+
+.page-footer {
+    background-color: #929FBA;
+}
+
+main .container #header {
+    background: gray;
+}
+
+    html, 
+    body, 
+    header,
+    .carousel {
+      height: 100vh;
+}
+
+@media (max-width:740px) {
+    html, 
+    body, 
+    header,
+    .carousel {
+      height: 100vh;
+  }
+@media (min-width: 800px) and (max-width: 850px) {
+    html, 
+    body, 
+    header,
+    .carousel {
+      height: 100vh;
+    }
+  }
+}
